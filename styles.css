@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+body {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.card-section {
+    background-color: hsl(278, 68%, 11%);
+    width: 40%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+}
+
+.form-section {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 300px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: hsl(278, 68%, 11%);
+}
+
+input {
+    width: 300px;
+    height: 35px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.datecvs {
+    display: flex;
+    gap: 15px;
+}
+
+#mm {
+    width: 60px;
+}
+
+#yy {
+    width: 60px;
+}
+
+#cvc {
+    width: 100px;
+}
+
+input::placeholder {
+    font-size: 14px;
+    text-align: center;
+}
+
+.front-card {
+    width: 400px;
+    height: 220px;
+    background-image: url("./images/bg-card-front.png");
+    margin: 30px;
+    color: hsl(212, 12%, 71%);
+    position: relative;
+    z-index: 2;
+}
+
+.front-card img {
+    width: 50px;
+    margin: 25px;
+}
+
+.front-card h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px 20px 0;
+    letter-spacing: 2px;
+}
+
+.front-card p {
+    font-size: 18px;
+    margin: 0;
+    position: absolute;
+    bottom: 25px;
+}
+
+.front-card p:nth-of-type(1) {
+    left: 25px;
+}
+
+.front-card p:nth-of-type(2) {
+    right: 25px;
+}
+
+.back-card {
+    width: 400px;
+    height: 220px;
+    background-image: url("./images/bg-card-back.png");
+    margin: 30px;
+    color: hsl(212, 12%, 71%);
+    position: relative;
+}
+
+.back-card p {
+    position: absolute;
+    right: 40px;
+    top: 90px;
+    font-size: 20px;
+    color: hsl(270, 3%, 87%);
+}
+
+button {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    color:hsl(0, 100%, 100%);
+    height: 50px;
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 20px;
+}
+
+#nameError{
+    color:red;
+}
+
+#cardError{
+    color:red;
+}
+
+#mmError{
+    color:red;
+}
+
+#yyError{
+    color:red;
+}
+
+#cvcError{
+    color:red;
+}
+
+#thankYou {
+    display: none;
+    font-size: 25px;
+    color: hsl(278, 68%, 11%);
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid hsl(278, 68%, 11%);
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    .card-section {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .form-section {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    /* FRONT CARD */
+
+    .front-card {
+        width: 300px;
+        height: 165px;
+        margin: 20px;
+    }
+
+    .front-card img {
+        width: 40px;
+        margin: 18px;
+    }
+
+    .front-card h1 {
+        font-size: 18px;
+        margin: 15px 15px 0;
+        letter-spacing: 1.5px;
+    }
+
+    .front-card p {
+        font-size: 12px;
+        bottom: 18px;
+    }
+
+    .front-card p:nth-of-type(1) {
+        left: 18px;
+    }
+
+    .front-card p:nth-of-type(2) {
+        right: 18px;
+    }
+
+    /* BACK CARD */
+
+    .back-card {
+        width: 300px;
+        height: 165px;
+        margin: -70px 20px 20px 80px;
+    }
+
+    .back-card p {
+        right: 30px;
+        top: 67px;
+        font-size: 14px;
+    }
+
+    /* FORM */
+
+    form {
+        width: 300px;
+    }
+
+    input {
+        width: 300px;
+    }
+
+    .datecvs {
+        gap: 10px;
+    }
+
+    #mm {
+        width: 55px;
+    }
+
+    #yy {
+        width: 55px;
+    }
+
+    #cvc {
+        width: 90px;
+    }
+
+    button {
+        width: 300px;
+    }
+
+    /* THANK YOU */
+
+    #thankYou {
+        width: 300px;
+        margin: 50px auto;
+        text-align: center;
+        font-size: 20px;
+    }
+
+}
