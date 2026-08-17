@@ -143,17 +143,24 @@ confirmButton.addEventListener("click", (event) => {
 
 
     // EVERYTHING IS CORRECT
-    if (isValid) {
-        form.style.display = "none";
-        thankYou.style.display = "block";
-    }
+   if (isValid) {
+    form.reset();
+
+    form.style.display = "none";
+    thankYou.style.display = "block";
+}
 
 });
-
 
 continueButton.addEventListener("click", () => {
 
     thankYou.style.display = "none";
     form.style.display = "block";
+
+    nameHolder.textContent = "Jane Appleseed";
+    cardHolder.textContent = "0000 0000 0000 0000";
+    mmHolder.textContent = "00";
+    yyHolder.textContent = "00";
+    cvcHolder.textContent = "000";
 
 });
