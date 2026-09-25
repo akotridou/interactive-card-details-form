@@ -2,6 +2,9 @@
 
 An interactive credit card details form with real-time validation.
 
+## Live Demo
+View Live Site: (https://akotridou.github.io/interactive-card-details-form/)
+
 ## Features
 - Interactive card preview
 - Real-time input updates
@@ -13,7 +16,7 @@ An interactive credit card details form with real-time validation.
 ## Built With
 - HTML
 - CSS
-- JavaScript (mostly)
+- JavaScript 
 
 ## What I Learned
 - DOM manipulation
@@ -22,5 +25,3 @@ An interactive credit card details form with real-time validation.
 - JavaScript events
 - Responsive layouts
 
-## Live Demo
-View Live Site: (https://akotridou.github.io/interactive-card-details-form/)
